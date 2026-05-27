@@ -451,3 +451,136 @@ b) Příliš mnoho vizualizací a informací na jedné stránce
 
 ---
 
+# Mini test – Lekce 7: Základy jazyka DAX v Power BI
+
+## 1.
+K čemu slouží jazyk DAX v Power BI?
+
+a) K importu dat  
+b) K tvorbě dashboard layoutu  
+c) K vytváření výpočtů, měr a business logiky  
+d) K instalaci datových konektorů  
+
+### Správná odpověď:
+c) K vytváření výpočtů, měr a business logiky
+
+---
+
+## 2.
+Jaký je hlavní rozdíl mezi calculated column a measure?
+
+a) Measure je statická a calculated column dynamická  
+b) Calculated column reaguje na slicery a measure ne  
+c) Measure je dynamická a calculated column statická  
+d) Mezi nimi není rozdíl  
+
+### Správná odpověď:
+c) Measure je dynamická a calculated column statická
+
+---
+
+## 3.
+Která funkce spočítá počet všech řádků tabulky?
+
+a) COUNT()  
+b) COUNTROWS()  
+c) SUM()  
+d) AVERAGE()  
+
+### Správná odpověď:
+b) COUNTROWS()
+
+---
+
+## 4.
+Co dělá funkce SUM()?
+
+a) Počítá průměr hodnot  
+b) Počítá počet řádků  
+c) Sčítá hodnoty ve sloupci  
+d) Filtruje tabulku  
+
+### Správná odpověď:
+c) Sčítá hodnoty ve sloupci
+
+---
+
+## 5.
+Která funkce slouží k výpočtu průměrné hodnoty?
+
+a) COUNT()  
+b) FILTER()  
+c) SUM()  
+d) AVERAGE()  
+
+### Správná odpověď:
+d) AVERAGE()
+
+---
+
+## 6.
+K čemu slouží funkce CALCULATE()?
+
+a) K importu dat  
+b) Ke změně filter contextu a aplikaci podmínek  
+c) K tvorbě grafů  
+d) K převodu datových typů  
+
+### Správná odpověď:
+b) Ke změně filter contextu a aplikaci podmínek
+
+---
+
+## 7.
+Co je filter context?
+
+a) Výpočet po jednotlivých řádcích  
+b) Kontext vytvořený filtry, slicery a vizualizacemi  
+c) Typ grafu v Power BI  
+d) Proces importu dat  
+
+### Správná odpověď:
+b) Kontext vytvořený filtry, slicery a vizualizacemi
+
+---
+
+## 8.
+Kdy vzniká row context?
+
+a) Při práci se slicery  
+b) Při výpočtu nad jednotlivými řádky  
+c) Při publikaci reportu  
+d) Při exportu dashboardu  
+
+### Správná odpověď:
+b) Při výpočtu nad jednotlivými řádky
+
+---
+
+## 9.
+Proč není vhodné používat příliš mnoho calculated columns?
+
+a) Nelze je zobrazit v reportu  
+b) Zvětšují model a mohou zhoršit performance  
+c) Neumí pracovat s čísly  
+d) Nelze je filtrovat  
+
+### Správná odpověď:
+b) Zvětšují model a mohou zhoršit performance
+
+---
+
+## 10.
+Která funkce umožňuje vytvořit podmínku v DAX?
+
+a) SUM()  
+b) IF()  
+c) COUNTROWS()  
+d) AVERAGE()  
+
+### Správná odpověď:
+b) IF()
+
+---
+
+
