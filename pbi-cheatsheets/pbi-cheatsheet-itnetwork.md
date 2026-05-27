@@ -577,4 +577,265 @@ Je to:
 
 ---
 
+# Cheatsheet – Lekce 5: Prostředí Power BI a základní vizualizace
+
+# Hlavní cíl lekce
+Naučit se:
+- orientovat v prostředí Power BI,
+- vytvářet základní vizualizace,
+- používat filtry a slicery,
+- chápat business význam dashboardů.
+
+---
+
+# Hlavní části Power BI
+
+## Report View
+Hlavní pracovní plocha pro:
+- dashboardy,
+- grafy,
+- KPI,
+- reporty.
+
+---
+
+## Data View
+Zobrazení:
+- tabulek,
+- sloupců,
+- datových typů.
+
+Používá se pro:
+- kontrolu dat,
+- validaci dat,
+- práci s calculated columns.
+
+---
+
+## Model View
+Zobrazuje:
+- vztahy mezi tabulkami,
+- relace,
+- datový model.
+
+Klíčové pro:
+- star schema,
+- relationship management,
+- DAX.
+
+---
+
+# Pravý panel
+
+## Vizualizace
+Výběr:
+- grafů,
+- tabulek,
+- slicerů,
+- KPI cards.
+
+---
+
+## Data
+Obsahuje:
+- tabulky,
+- sloupce,
+- measures.
+
+Pole se přetahují do vizualizací.
+
+---
+
+## Filtry
+Filtry lze aplikovat:
+- na vizuál,
+- stránku,
+- celý report.
+
+---
+
+# Nejčastější vizualizace
+
+## KPI Card
+Použití:
+- hlavní KPI,
+- rychlý přehled.
+
+Příklady:
+- Total Revenue,
+- Orders Count,
+- Profit,
+- Customers.
+
+---
+
+## Sloupcový graf
+Použití:
+- porovnání kategorií.
+
+Příklady:
+- Revenue by Category,
+- Revenue by Region,
+- Orders by Status.
+
+---
+
+## Spojnicový graf
+Použití:
+- vývoj v čase,
+- trendy.
+
+Příklady:
+- Revenue Over Time,
+- Orders Over Time,
+- Monthly Growth.
+
+---
+
+## Tabulka
+Použití:
+- detailní data,
+- drill-down analýza.
+
+---
+
+# Filtry vs Slicery
+
+## Filtr
+Používá se:
+- na pozadí reportu,
+- pro omezení dat.
+
+Může být:
+- Visual level,
+- Page level,
+- Report level.
+
+---
+
+## Slicer
+Interaktivní filtr přímo v dashboardu.
+
+Použití:
+- region,
+- datum,
+- kategorie,
+- zákazník.
+
+Výhoda:
+- management si může report filtrovat sám.
+
+---
+
+# Typické chyby junior analytiků
+
+## Příliš mnoho grafů
+Výsledek:
+- chaos,
+- nepřehlednost,
+- cognitive overload.
+
+---
+
+## Příliš mnoho barev
+Barvy mají:
+- zvýrazňovat,
+- ne rušit.
+
+---
+
+## Špatný typ grafu
+Příklad:
+- trend v pie chartu,
+- časová řada v koláčovém grafu.
+
+---
+
+## Dashboard bez business otázky
+Dashboard musí odpovídat:
+- na problém,
+- na KPI,
+- na business otázku.
+
+---
+
+# Business mindset
+
+## Dashboard není jen hezký obrázek
+Dashboard má:
+- pomáhat rozhodování,
+- ukazovat trendy,
+- zvýraznit problémy,
+- zjednodušit interpretaci dat.
+
+---
+
+## Špatná data = špatný dashboard
+Ani nejlepší graf:
+- neopraví nekvalitní data.
+
+Proto:
+```text
+Data Quality > Vizualizace
+```
+
+---
+
+# Doporučený workflow
+
+```text
+Import dat
+→ Cleaning
+→ Transformace
+→ Datový model
+→ KPI
+→ Vizualizace
+→ Storytelling
+```
+
+---
+
+# Důležité koncepty
+
+## KPI
+Klíčový business ukazatel.
+
+Příklady:
+- revenue,
+- profit,
+- conversion rate,
+- orders count.
+
+---
+
+## Storytelling
+Vizualizace mají:
+- vyprávět příběh,
+- vysvětlovat business situaci,
+- ukázat insight.
+
+---
+
+## Interaktivita
+Power BI dashboard:
+- není statický,
+- uživatel s ním pracuje pomocí:
+  - slicerů,
+  - filtrů,
+  - drill-downu.
+
+---
+
+# Hlavní learning outcomes
+
+Po lekci:
+- orientace v Power BI,
+- tvorba základních vizualizací,
+- práce s filtry,
+- práce se slicery,
+- pochopení dashboard mindsetu,
+- základ business storytellingu.
+
+---
+
 
