@@ -239,3 +239,146 @@ Vždy validuj:
 - kvalitu dat.
 
 ---
+
+# Lekce 3 — Cheatsheet
+## Seznámení s Power Query a úvod do čištění dat
+
+---
+
+# Hlavní princip
+
+Garbage In = Garbage Out
+
+Špatná data:
+- → špatná analýza,
+- → špatné KPI,
+- → špatná business rozhodnutí.
+
+---
+
+# Proč čistíme data
+
+- zajištění kvality dat,
+- odstranění duplicit,
+- sjednocení formátů,
+- odstranění nevalidních hodnot,
+- lepší výkon modelu,
+- lepší interpretace dat.
+
+---
+
+# Nejčastější problémy v datech
+
+## Duplicity
+- zkreslují agregace a KPI.
+
+## Null values
+- chybějící data mohou rozbíjet výpočty.
+
+## Nekonzistentní formáty
+- různé datumy,
+- různé zápisy textu.
+
+## Nevalidní hodnoty
+- záporné quantity,
+- neplatné emaily,
+- nesmyslné hodnoty.
+
+## Mezery v textu
+- problémy s groupingem a relationships.
+
+---
+
+# Kdy čistíme data
+
+- při slučování více zdrojů,
+- před reportingem,
+- při migraci systémů,
+- při automatizaci,
+- při modelování a predikci.
+
+---
+
+# Power Query
+
+Power Query slouží pro:
+- ETL workflow,
+- cleaning dat,
+- transformace,
+- automatizaci přípravy dat.
+
+---
+
+# Hlavní části Power Query
+
+## Queries panel
+- seznam tabulek/dotazů.
+
+## Data preview
+- náhled dat.
+
+## Applied Steps
+- historie transformací.
+
+## Ribbon
+- transformační nástroje.
+
+---
+
+# Applied Steps
+
+Každý krok:
+- se ukládá,
+- lze upravit,
+- lze odstranit,
+- lze automaticky zopakovat.
+
+To umožňuje:
+- automatizaci,
+- reprodukovatelnost,
+- ETL pipeline.
+
+---
+
+# Jazyk M
+
+- každý krok generuje M kód,
+- umožňuje pokročilé transformace,
+- zatím není nutné memorovat.
+
+---
+
+# Profesionální přístup
+
+✔️ cleaning v Power Query  
+❌ ruční úpravy v Excelu
+
+---
+
+# Performance mindset
+
+Menší a čistší dataset:
+- rychlejší refresh,
+- nižší RAM usage,
+- lepší výkon dashboardů.
+
+---
+
+# Typické chyby junior analytiků
+
+- ignorování null values,
+- chaos v Applied Steps,
+- ruční cleaning,
+- špatné datové typy,
+- absence validace dat.
+
+---
+
+# Důležitý mindset
+
+Analytik:
+- nevěří datům automaticky,
+- data validuje a kontroluje.
+
+---
+
