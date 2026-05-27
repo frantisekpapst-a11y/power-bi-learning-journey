@@ -382,3 +382,199 @@ Analytik:
 
 ---
 
+# Lekce 4 — Cheatsheet
+## Základní úpravy a transformace dat v Power Query
+
+---
+
+# Hlavní princip
+
+Power Query = ETL workflow builder
+
+Každá transformace:
+- je automatizovaná,
+- reprodukovatelná,
+- součást datové pipeline.
+
+---
+
+# Nejčastější transformace
+
+- Merge Queries
+- Rename Columns
+- Filtering
+- Change Data Types
+- Remove Duplicates
+- Sorting
+- Group By
+
+---
+
+# Merge Queries
+
+Slouží pro:
+- spojení tabulek pomocí společného klíče.
+
+Příklad:
+- orders + customers
+- products + categories
+
+---
+
+# Důležité pojmy
+
+## Primary Key
+Jedinečný identifikátor.
+
+## Foreign Key
+Odkaz na jinou tabulku.
+
+---
+
+# Left Outer Join
+
+Nejčastější BI join.
+
+Zachová:
+- všechny záznamy z levé tabulky.
+
+---
+
+# Rename Columns
+
+Cíl:
+- lepší čitelnost,
+- business-friendly názvy,
+- přehlednější reporting.
+
+---
+
+# Filtering
+
+Použití:
+- odstranění null values,
+- odstranění nevalidních dat,
+- omezení datasetu,
+- zvýšení výkonu.
+
+---
+
+# Data Types
+
+Kriticky důležité pro:
+- DAX,
+- agregace,
+- relationships,
+- time intelligence.
+
+---
+
+# Typické datové typy
+
+- text
+- whole number
+- decimal number
+- date
+- datetime
+- boolean
+
+---
+
+# Remove Duplicates
+
+Odstraňuje:
+- duplicitní záznamy.
+
+Pozor:
+- ne každá duplicita je chyba.
+
+---
+
+# Sorting
+
+Pomáhá:
+- validaci dat,
+- hledání outliers,
+- přehlednosti dat.
+
+---
+
+# Group By
+
+Slouží pro:
+- agregace,
+- sumarizace,
+- KPI thinking.
+
+Podobné:
+- SQL GROUP BY.
+
+---
+
+# Applied Steps
+
+Každá transformace:
+- se ukládá,
+- lze ji upravit,
+- lze ji odstranit,
+- automaticky se opakuje při refreshi.
+
+---
+
+# Duplikace query
+
+Profesionální přístup:
+- originální query zachovat,
+- experimentovat na kopii.
+
+---
+
+# PBIX soubor
+
+.pbix obsahuje:
+- Power Query transformace,
+- data model,
+- relationships,
+- DAX,
+- dashboardy,
+- vizualizace.
+
+---
+
+# Typické chyby junior analytiků
+
+- špatné joins,
+- ignorování datových typů,
+- mazání validních duplicit,
+- chaos v Applied Steps,
+- absence validace merge výsledků.
+
+---
+
+# Performance mindset
+
+Filtrovat a čistit data:
+- co nejdříve,
+- co nejblíže zdroji dat.
+
+To zlepšuje:
+- výkon,
+- refresh,
+- stabilitu modelu.
+
+---
+
+# Důležitý mindset
+
+Power Query není:
+- jen klikání.
+
+Je to:
+- ETL,
+- workflow,
+- datová pipeline,
+- základ profesionální BI analytiky.
+
+---
+
+
