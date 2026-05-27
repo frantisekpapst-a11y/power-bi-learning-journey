@@ -561,5 +561,277 @@ Analytik:
 
 ---
 
+# Notes – Lekce 6: Efektivní vizualizace a dashboard design
 
+# Hlavní myšlenka lekce
+
+Dashboard není jen sada grafů.
+
+Je to:
+- nástroj pro rozhodování,
+- komunikační vrstva mezi daty a businessem,
+- způsob, jak rychle předat důležité informace.
+
+---
+
+# Co je cílem dobrého dashboardu
+
+Dobrý dashboard:
+- rychle komunikuje insight,
+- je přehledný,
+- vede pozornost uživatele,
+- pomáhá rozhodování,
+- minimalizuje chaos.
+
+---
+
+# Každý graf musí odpovídat na otázku
+
+Před vytvořením vizualizace je důležité vědět:
+
+```text
+Co chci tímto grafem ukázat?
+```
+
+Příklady:
+- Který region generuje nejvyšší revenue?
+- Jak se vyvíjí tržby v čase?
+- Jaký podíl mají jednotlivé kategorie?
+- Existuje vztah mezi cenou a počtem objednávek?
+
+---
+
+# Výběr správného grafu
+
+## Bar/Column Chart
+Použití:
+- porovnání kategorií,
+- regionů,
+- produktů,
+- oddělení.
+
+---
+
+## Line Chart
+Použití:
+- trendy,
+- časové řady,
+- vývoj v čase.
+
+---
+
+## Pie Chart
+Použití:
+- podíly na celku,
+- malé množství kategorií.
+
+Nevhodné:
+- velké množství segmentů.
+
+---
+
+## Scatter Plot
+Použití:
+- vztahy mezi proměnnými.
+
+---
+
+## Treemap
+Použití:
+- hierarchická data,
+- podíly kategorií.
+
+---
+
+# Nejčastější chyby
+
+## 3D grafy
+Problémy:
+- zkreslení dat,
+- horší čitelnost,
+- složitější interpretace.
+
+---
+
+## Příliš mnoho barev
+Výsledek:
+- chaos,
+- přetížení uživatele,
+- horší orientace.
+
+---
+
+## Dashboard overload
+Příliš:
+- grafů,
+- KPI,
+- tabulek,
+- informací.
+
+Výsledek:
+- dashboard je nepřehledný,
+- uživatel neví, kam se dívat.
+
+---
+
+## Špatný typ grafu
+Příklad:
+- trend v pie chartu,
+- časová řada v tabulce bez vizualizace.
+
+---
+
+# Minimalismus
+
+Princip:
+```text
+Less is More
+```
+
+Dashboard:
+- nemá být dekorace,
+- každý prvek musí mít význam.
+
+---
+
+# Whitespace
+
+Prázdné místo:
+- odděluje sekce,
+- zvyšuje čitelnost,
+- pomáhá fokusovat pozornost.
+
+Whitespace:
+≠ ztracené místo.
+
+---
+
+# Eye Flow
+
+Lidé čtou:
+- zleva doprava,
+- shora dolů.
+
+Proto:
+- nejdůležitější KPI nahoře vlevo,
+- trendy uprostřed,
+- detailní data dole.
+
+---
+
+# Hierarchie informací
+
+## Nahoře
+- hlavní KPI,
+- nejdůležitější metriky.
+
+---
+
+## Uprostřed
+- trendy,
+- hlavní grafy.
+
+---
+
+## Dole
+- detailní tabulky,
+- doplňující analýza.
+
+---
+
+# KPI Cards
+
+Použití:
+- rychlý přehled hlavních metrik.
+
+Příklady:
+- Revenue,
+- Profit,
+- Orders,
+- Customers.
+
+---
+
+# Filtry a slicery
+
+## Filtry
+Použití:
+- omezení datasetu,
+- filtrování reportu.
+
+---
+
+## Slicery
+Použití:
+- interaktivní dashboard,
+- self-service analytics.
+
+Výhoda:
+- management si může report filtrovat sám.
+
+---
+
+# Drill-down
+
+Umožňuje:
+- přechod z agregovaných dat do detailu.
+
+Příklad:
+```text
+Rok → Kvartál → Měsíc → Den
+```
+
+---
+
+# Business storytelling
+
+Dashboard:
+- má vyprávět příběh,
+- ukázat problém,
+- zvýraznit trend,
+- podpořit rozhodnutí.
+
+---
+
+# Data-Ink Ratio
+
+Každý vizuální prvek:
+- musí mít význam.
+
+Odstranit:
+- zbytečné dekorace,
+- přebytečné rámečky,
+- rušivé efekty.
+
+---
+
+# Profesionální dashboard
+
+Typické vlastnosti:
+- minimalistický,
+- čistý,
+- konzistentní,
+- business-oriented,
+- snadno čitelný.
+
+---
+
+# Důležitý mindset
+
+```text
+Dobrý dashboard ukazuje důležité.
+Ne všechno.
+```
+
+---
+
+# Hlavní learning outcomes
+
+Po lekci:
+- správný výběr grafů,
+- dashboard UX mindset,
+- business storytelling,
+- práce s hierarchií informací,
+- minimalismus v reportingu,
+- pochopení dashboard design principů.
 
