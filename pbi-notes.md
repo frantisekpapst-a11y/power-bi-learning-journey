@@ -65,3 +65,85 @@ Důležitá KPI:
 Skvělý analytik:
 - nepřemýšlí v grafech,
 - přemýšlí v rozhodnutích.
+
+---
+
+# Lekce 2 — Notes
+
+---
+
+# Hlavní poznatky
+
+- Import dat je základ BI workflow.
+- Kvalita dat ovlivňuje celý reporting.
+- SQL databáze jsou profesionální datový zdroj.
+- CSV vyžaduje správné nastavení delimiteru.
+- Power Query Editor je klíčový pro ETL proces.
+
+---
+
+# Rozdíly mezi zdroji dat
+
+## Excel
+- jednoduchý,
+- vhodný pro menší data,
+- náchylný k chybám.
+
+## CSV
+- lehký formát,
+- často používaný pro exporty,
+- důležitý delimiter.
+
+## SQL
+- nejvýkonnější řešení,
+- vhodné pro enterprise BI.
+
+---
+
+# Důležitý mindset
+
+Nejdřív:
+- validace dat,
+- kontrola struktury,
+- cleaning.
+
+Teprve potom:
+- dashboard,
+- KPI,
+- vizualizace.
+
+---
+
+# Power Query workflow
+
+Transformovat data:
+- otevře Power Query,
+- umožní cleaning,
+- umožní ETL proces.
+
+---
+
+# Typické problémy
+
+- špatný delimiter,
+- datum jako text,
+- duplicitní data,
+- neaktuální cache,
+- příliš velký dataset.
+
+---
+
+# Profesionální BI přístup
+
+Filtrovat data:
+- už při SQL importu,
+- ne až v dashboardu.
+
+To zlepšuje:
+- výkon,
+- refresh,
+- efektivitu modelu.
+
+---
+
+
