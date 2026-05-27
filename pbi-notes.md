@@ -337,3 +337,229 @@ Skvělý analytik:
 - nepřemýšlí v grafech,
 - přemýšlí v kvalitě dat a business rozhodnutích.
 
+---
+
+# Lekce 4 — Notes
+
+---
+
+# Hlavní myšlenka lekce
+
+Power Query není jen nástroj na klikání.
+
+Je to:
+- ETL workflow,
+- transformační engine,
+- základ datové pipeline v Power BI.
+
+---
+
+# Transformace dat
+
+Cíl transformací:
+- připravit data pro reporting,
+- zvýšit kvalitu dat,
+- sjednotit strukturu,
+- zlepšit výkon modelu.
+
+---
+
+# Nejčastější transformace
+
+- Merge Queries
+- Rename Columns
+- Filtering
+- Change Data Types
+- Remove Duplicates
+- Sorting
+- Group By
+
+---
+
+# Merge Queries
+
+Spojování tabulek pomocí:
+- společného klíče.
+
+Příklad:
+- orders + customers
+- products + categories
+
+---
+
+# SQL mindset v Power Query
+
+Merge Queries fungují podobně jako:
+- SQL JOIN.
+
+Důležité:
+- validní klíče,
+- správná cardinality,
+- kontrola duplicit.
+
+---
+
+# Left Outer Join
+
+Nejčastější BI join.
+
+Použití:
+- zachovat všechny záznamy hlavní tabulky,
+- doplnit data z druhé tabulky.
+
+---
+
+# Rizika Merge operací
+
+- duplicity klíčů,
+- null klíče,
+- many-to-many relationships,
+- nafouknuté tabulky,
+- zkreslené KPI.
+
+---
+
+# Rename Columns
+
+Důležité pro:
+- business uživatele,
+- čitelnost dashboardu,
+- konzistentní naming.
+
+---
+
+# Profesionální naming
+
+✔️ Celková částka  
+✔️ Revenue  
+✔️ Order Date
+
+❌ col_1  
+❌ temp_final_new2
+
+---
+
+# Filtering
+
+Použití:
+- odstranění null values,
+- odstranění testovacích dat,
+- omezení datasetu,
+- zvýšení výkonu.
+
+---
+
+# Performance mindset
+
+Filtrovat data:
+- co nejdříve,
+- co nejblíže zdroji dat.
+
+---
+
+# Data Types
+
+Extrémně důležitá část BI workflow.
+
+Power BI musí správně chápat:
+- čísla,
+- datumy,
+- text,
+- boolean hodnoty.
+
+---
+
+# Typické problémy datových typů
+
+- revenue jako text,
+- datum jako string,
+- čísla s nesprávným locale formátem.
+
+---
+
+# Remove Duplicates
+
+Důležité:
+- ne každá duplicita je chyba.
+
+Analytik musí chápat:
+- business logiku dat.
+
+---
+
+# Sorting
+
+Pomáhá:
+- validaci dat,
+- hledání outliers,
+- kontrole kvality dat.
+
+---
+
+# Group By
+
+Slouží pro:
+- agregace,
+- sumarizace,
+- první business insights.
+
+Podobné:
+- SQL GROUP BY.
+
+---
+
+# Applied Steps
+
+Každá transformace:
+- se ukládá,
+- lze ji upravit,
+- lze ji odstranit,
+- automaticky se opakuje při refreshi.
+
+To umožňuje:
+- automatizaci,
+- reprodukovatelnost,
+- ETL pipeline.
+
+---
+
+# Duplikace query
+
+Profesionální workflow:
+- originální query zachovat,
+- experimentovat na kopii.
+
+---
+
+# PBIX soubor
+
+.pbix obsahuje:
+- data model,
+- Power Query transformace,
+- relationships,
+- DAX,
+- dashboardy,
+- vizualizace.
+
+---
+
+# Typické chyby junior analytiků
+
+- špatné joins,
+- ignorování datových typů,
+- mazání validních duplicit,
+- chaos v Applied Steps,
+- absence validace merge výsledků.
+
+---
+
+# Real-world BI mindset
+
+Analytik:
+- nepřemýšlí jen o dashboardu,
+- ale o kvalitě celé datové pipeline.
+
+---
+
+
+
