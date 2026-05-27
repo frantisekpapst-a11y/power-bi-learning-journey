@@ -112,4 +112,74 @@ b) Otevření Power Query Editoru
 
 ---
 
+# Lekce 3 — Mini Test
+## Seznámení s Power Query a úvod do čištění dat
+
+---
+
+## Otázka 1
+Proč jsou duplicity v datech nebezpečné?
+
+- a) Zvětšují dashboard
+- b) Mohou zkreslit KPI a agregace
+- c) Zlepšují výkon
+- d) Nemají vliv
+
+### Správná odpověď
+b)
+
+---
+
+## Otázka 2
+Co je hlavní výhoda Applied Steps v Power Query?
+
+- a) Barevné zvýraznění dat
+- b) Automatizace a reprodukovatelnost transformací
+- c) Export do PDF
+- d) Tvorba dashboardů
+
+### Správná odpověď
+b)
+
+---
+
+## Otázka 3
+Proč je problém mít datum jako text?
+
+- a) Zabírá více RAM
+- b) Nejde správně filtrovat a analyzovat časová data
+- c) Zlepšuje výkon
+- d) Nemá to význam
+
+### Správná odpověď
+b)
+
+---
+
+## Otázka 4
+Co je profesionálnější přístup?
+
+- a) Ručně čistit data v Excelu
+- b) Přepisovat source data
+- c) Automatizovat cleaning v Power Query
+- d) Ignorovat null values
+
+### Správná odpověď
+c)
+
+---
+
+## Otázka 5
+Co znamená „Garbage In, Garbage Out“?
+
+- a) Data nejsou důležitá
+- b) Špatná data vedou ke špatným výsledkům analýzy
+- c) Dashboard opraví nekvalitní data
+- d) Vizuály jsou důležitější než data
+
+### Správná odpověď
+b)
+
+---
+
 
