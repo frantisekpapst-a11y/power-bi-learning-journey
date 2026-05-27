@@ -838,4 +838,309 @@ Po lekci:
 
 ---
 
+# Cheatsheet – Lekce 6: Efektivní vizualizace a dashboard design
+
+# Hlavní cíl lekce
+Naučit se:
+- vybírat správné vizualizace,
+- navrhovat přehledné dashboardy,
+- zlepšit čitelnost reportů,
+- podporovat business rozhodování pomocí dat.
+
+---
+
+# Hlavní princip
+
+```text
+Dashboard není galerie grafů.
+Dashboard je nástroj pro rozhodování.
+```
+
+---
+
+# Výběr správného typu grafu
+
+## Sloupcový graf (Bar/Column Chart)
+Použití:
+- porovnání kategorií,
+- regionů,
+- produktů,
+- oddělení.
+
+Příklady:
+- Revenue by Region
+- Orders by Category
+
+---
+
+## Pruhový graf
+Použití:
+- dlouhé názvy kategorií,
+- větší počet položek.
+
+Výhoda:
+- lepší čitelnost textu.
+
+---
+
+## Spojnicový graf (Line Chart)
+Použití:
+- trendy,
+- vývoj v čase,
+- sezónnost.
+
+Příklady:
+- Revenue Over Time
+- Orders Over Time
+
+---
+
+## Koláčový graf (Pie Chart)
+Použití:
+- podíly na celku,
+- malé množství kategorií.
+
+Nevhodné:
+- příliš mnoho segmentů.
+
+---
+
+## Histogram
+Použití:
+- rozložení dat,
+- četnosti.
+
+Příklady:
+- věk zákazníků,
+- velikost objednávek.
+
+---
+
+## Scatter Plot (Bodový graf)
+Použití:
+- vztah mezi dvěma proměnnými.
+
+Příklady:
+- cena vs počet objednávek,
+- marketing spend vs revenue.
+
+---
+
+## Treemap
+Použití:
+- hierarchická data,
+- podíly v rámci kategorií.
+
+Příklady:
+- revenue podle kategorií a podkategorií.
+
+---
+
+# Nejčastější chyby
+
+## 3D grafy
+Nevýhody:
+- zkreslení dat,
+- horší čitelnost,
+- nepřesné porovnávání.
+
+---
+
+## Příliš mnoho barev
+Výsledek:
+- chaos,
+- horší orientace,
+- cognitive overload.
+
+Doporučení:
+- používat jednotnou barevnou paletu.
+
+---
+
+## Příliš mnoho grafů
+Dashboard:
+- nesmí zahlcovat,
+- musí mít jasnou hierarchii.
+
+---
+
+## Špatný typ grafu
+Příklad:
+- trend v pie chartu,
+- časová osa v tabulce bez vizualizace.
+
+---
+
+# Minimalismus a čitelnost
+
+## Less is More
+Každý prvek:
+- musí mít smysl,
+- musí podporovat interpretaci dat.
+
+---
+
+## Whitespace
+Prázdné místo:
+- zvyšuje přehlednost,
+- odděluje sekce,
+- pomáhá fokusovat pozornost.
+
+---
+
+## Konzistentní design
+Používat:
+- stejné fonty,
+- stejné barvy,
+- stejné spacingy.
+
+---
+
+# Dashboard Layout
+
+## Hierarchie informací
+
+### Nahoře:
+- hlavní KPI,
+- nejdůležitější insighty.
+
+### Uprostřed:
+- trendy,
+- hlavní grafy.
+
+### Dole:
+- detailní tabulky,
+- doplňující analýza.
+
+---
+
+# Eye Flow
+
+Lidé čtou:
+```text
+Zleva doprava
+Shora dolů
+```
+
+Proto:
+- nejdůležitější informace vlevo nahoře.
+
+---
+
+# KPI Cards
+
+Použití:
+- rychlý přehled hlavních metrik.
+
+Příklady:
+- Revenue
+- Profit
+- Orders
+- Customers
+
+---
+
+# Filtry a slicery
+
+## Filtry
+Použití:
+- omezení datasetu,
+- page/report filtering.
+
+---
+
+## Slicery
+Použití:
+- interaktivní dashboard,
+- self-service analytics.
+
+Příklady:
+- region,
+- datum,
+- produkt,
+- zákazník.
+
+---
+
+# Drill-down
+
+Umožňuje:
+- přechod z agregace do detailu.
+
+Příklad:
+```text
+Rok → Kvartál → Měsíc → Den
+```
+
+---
+
+# Business storytelling
+
+Dashboard má:
+- odpovídat na otázky,
+- zvýraznit problémy,
+- ukázat trendy,
+- podpořit rozhodování.
+
+---
+
+# Data-Ink Ratio
+
+Každý vizuální prvek:
+- musí mít význam.
+
+Odstranit:
+- zbytečné rámečky,
+- přebytečné ikony,
+- dekorace bez informační hodnoty.
+
+---
+
+# Profesionální dashboard
+
+Typické vlastnosti:
+- minimalistický,
+- čistý,
+- konzistentní,
+- přehledný,
+- business-oriented.
+
+---
+
+# Doporučený dashboard layout
+
+```text
+[KPI CARDS]
+Revenue | Profit | Orders | Customers
+
+----------------------------
+
+[MAIN TREND]
+Revenue Over Time
+
+----------------------------
+
+[COMPARISON]
+Revenue by Region | Revenue by Category
+
+----------------------------
+
+[DETAIL TABLE]
+Top Products | Order Details
+```
+
+---
+
+# Hlavní learning outcomes
+
+Po lekci:
+- správný výběr grafů,
+- dashboard UX mindset,
+- business storytelling,
+- minimalismus v reportingu,
+- práce s hierarchií informací,
+- pochopení dashboard design principů.
+
+---
+
 
