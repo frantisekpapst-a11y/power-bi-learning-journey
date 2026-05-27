@@ -1,5 +1,4 @@
 # Power BI & Datová analytika – Otázky a správné odpovědi
-Posledních 16 otázek je ze závěrečního testu kurzu Datová analýza od A do Z, část Datová analýza s Power BI.
 
 # Kvíz 1 – Import a čištění dat v Power Query
 
