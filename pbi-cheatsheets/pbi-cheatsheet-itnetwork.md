@@ -123,10 +123,119 @@ Cílem je:
 
 Power Query = kuchyně  
 Power BI = restaurace
+Nejdřív musí být kvalitní data.
+Teprve potom vzniká kvalitní dashboard.
 
 ---
 
+# Lekce 2 — Cheatsheet
+## Import dat do Power BI
 
+---
 
-Nejdřív musí být kvalitní data.
-Teprve potom vzniká kvalitní dashboard.
+# Import dat
+
+Import dat je:
+- první krok analytického workflow,
+- základ ETL procesu,
+- kritická část BI pipeline.
+
+---
+
+# Nejčastější datové zdroje
+
+## Excel
+Výhody:
+- jednoduchost,
+- dostupnost.
+
+Nevýhody:
+- manuální chyby,
+- nekonzistence,
+- špatná škálovatelnost.
+
+---
+
+## CSV
+
+Výhody:
+- univerzálnost,
+- rychlost,
+- jednoduchý formát.
+
+Důležité:
+- správný delimiter,
+- encoding,
+- datové typy.
+
+---
+
+## SQL databáze
+
+Výhody:
+- vysoký výkon,
+- centralizace dat,
+- škálovatelnost,
+- možnost filtrování při importu.
+
+Profesionální BI workflow používá primárně databáze.
+
+---
+
+# Důležitý BI princip
+
+Neimportuj:
+- všechna data,
+- všechny sloupce,
+- nepotřebnou historii.
+
+Importuj:
+- pouze relevantní data.
+
+---
+
+# Power Query Editor
+
+Možnost:
+- „Transformovat data“
+
+otevírá:
+- cleaning,
+- ETL workflow,
+- transformace dat.
+
+V praxi se používá téměř vždy.
+
+---
+
+# Důležité kontroly po importu
+
+- null values,
+- duplicates,
+- delimiters,
+- encoding,
+- datové typy,
+- datumové formáty.
+
+---
+
+# Typické chyby junior analytiků
+
+- import všeho,
+- ignorování datových typů,
+- práce bez validace dat,
+- používání Excelu jako databáze,
+- špatné delimitery.
+
+---
+
+# Důležité pravidlo
+
+Data preview ≠ kvalitní data
+
+Vždy validuj:
+- strukturu,
+- konzistenci,
+- kvalitu dat.
+
+---
