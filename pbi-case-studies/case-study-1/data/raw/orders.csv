@@ -1,0 +1,16 @@
+order_id;customer_id;order_date;region;product;quantity;revenue;status
+1001;C001;2025-01-02;Praha;Laptop;1;35000;Completed
+1002;C002;02.01.2025;Brno;Mouse;2;1200;Completed
+1003;C003;2025/01/03;Ostrava;Keyboard;1;2500;Pending
+1004;C004;2025-01-04;Praha;Monitor;2;16000;Completed
+1005;;2025-01-04;Brno;Laptop;1;34000;Completed
+1006;C006;2025-01-05;Praha;Mouse;-3;1500;Completed
+1007;C007;2025-01-06;Ostrava;Monitor;1;999999;Completed
+1008;C008;2025-01-06;Brno;Keyboard;1;2300;Cancelled
+1009;C009;2025-01-07;Praha;Laptop;1;36000;Completed
+1010;C010;2025-01-07;Praha;Laptop;1;36000;Completed
+1010;C010;2025-01-07;Praha;Laptop;1;36000;Completed
+1011;C011;2025-01-08;Brno;Mouse;5;2500;Unknown
+1012;C012;2025-01-08; ;Keyboard;1;2100;Completed
+1013;C013;2025-01-09;Ostrava;Monitor;1;;Completed
+1014;C014;2025-01-10;Praha;Laptop;1;37000;Completed
