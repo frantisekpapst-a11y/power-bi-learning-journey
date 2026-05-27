@@ -835,3 +835,343 @@ Po lekci:
 - minimalismus v reportingu,
 - pochopení dashboard design principů.
 
+---
+
+# Notes – Lekce 7: Základy jazyka DAX v Power BI
+
+# Hlavní myšlenka lekce
+
+DAX:
+- není jen „vzorce v Power BI“,
+- ale analytický jazyk pro práci s datovým modelem.
+
+DAX umožňuje:
+- vytvářet KPI,
+- business logiku,
+- dynamické výpočty,
+- analytické metriky.
+
+---
+
+# Co je DAX
+
+DAX = Data Analysis Expressions
+
+Použití:
+- Power BI,
+- Power Pivot,
+- SSAS Tabular.
+
+---
+
+# Hlavní využití DAX
+
+## Measures
+Dynamické výpočty:
+- reagující na slicery,
+- filtry,
+- vizualizace,
+- kontext reportu.
+
+---
+
+## Calculated Columns
+Výpočty:
+- po jednotlivých řádcích,
+- uložené v modelu,
+- statické.
+
+---
+
+# Measure vs Calculated Column
+
+## Measure
+- dynamická,
+- počítá se při zobrazení,
+- reaguje na filter context,
+- neukládá se fyzicky do modelu.
+
+Příklad:
+```DAX
+Total Revenue = SUM(orders[revenue])
+```
+
+---
+
+## Calculated Column
+- statická,
+- počítá se při refreshi,
+- ukládá se do modelu,
+- funguje po řádcích.
+
+Příklad:
+```DAX
+price_with_vat = products[price] * 1.21
+```
+
+---
+
+# Nejdůležitější DAX funkce
+
+# SUM()
+Součet hodnot.
+
+```DAX
+Total Revenue = SUM(orders[revenue])
+```
+
+---
+
+# COUNT()
+Počet neprázdných hodnot ve sloupci.
+
+```DAX
+COUNT(orders[order_id])
+```
+
+Podobné:
+```sql
+COUNT(column)
+```
+
+---
+
+# COUNTROWS()
+Počet řádků tabulky.
+
+```DAX
+COUNTROWS(orders)
+```
+
+Podobné:
+```sql
+COUNT(*)
+```
+
+---
+
+# AVERAGE()
+Průměr hodnot.
+
+```DAX
+Average Revenue = AVERAGE(orders[revenue])
+```
+
+---
+
+# IF()
+Podmínka.
+
+```DAX
+IF(
+    SUM(orders[revenue]) > 2500,
+    "Yes",
+    "No"
+)
+```
+
+---
+
+# CALCULATE()
+
+Nejdůležitější funkce DAX.
+
+Použití:
+- změna filter contextu,
+- aplikace podmínek,
+- business logika.
+
+Příklad:
+```DAX
+CZ Revenue =
+CALCULATE(
+    SUM(orders[revenue]),
+    regions[country] = "Czech Republic"
+)
+```
+
+---
+
+# FILTER()
+
+Použití:
+- vytvoření podmnožiny dat,
+- složitější filtrace.
+
+Příklad:
+```DAX
+Big Orders =
+CALCULATE(
+    COUNTROWS(orders),
+    FILTER(orders, orders[revenue] > 2500)
+)
+```
+
+---
+
+# Kontext v DAX
+
+# Row Context
+
+Výpočet:
+- řádek po řádku.
+
+Použití:
+- calculated columns.
+
+Příklad:
+```DAX
+discount_price =
+orders[price] * (1 - orders[discount])
+```
+
+---
+
+# Filter Context
+
+Kontext vytvořený:
+- slicery,
+- filtry,
+- vizualizacemi,
+- výběrem uživatele.
+
+Measures:
+- reagují na filter context.
+
+Příklad:
+- jiný revenue pro Prahu,
+- jiný revenue pro Brno.
+
+---
+
+# Důležitý mindset
+
+## Excel mindset
+```text
+Buňka → vzorec → výsledek
+```
+
+---
+
+## DAX mindset
+```text
+Context → calculation → dynamic result
+```
+
+---
+
+# Power Query vs DAX
+
+## Power Query
+Použití:
+- ETL,
+- cleaning,
+- transformace,
+- příprava dat.
+
+---
+
+## DAX
+Použití:
+- KPI,
+- analytika,
+- business logika,
+- agregace.
+
+---
+
+# Nejčastější chyby juniorů
+
+## Používání calculated columns místo measures
+Výsledek:
+- větší model,
+- horší performance,
+- pomalejší refresh.
+
+---
+
+## Nechápání filter contextu
+Výsledek:
+- špatné KPI,
+- nesprávné výpočty,
+- zmatené výsledky.
+
+---
+
+## Dělání všeho v Power Query
+Některé výpočty:
+- mají být v DAX,
+- ne v ETL vrstvě.
+
+---
+
+# Důležité principy
+
+## Measures jsou základ BI reportingu
+Protože:
+- jsou dynamické,
+- reagují na kontext,
+- podporují interaktivní dashboardy.
+
+---
+
+## CALCULATE() je srdce DAXu
+Většina pokročilého DAX:
+- stojí na CALCULATE().
+
+---
+
+## Filter Context určuje výsledek measure
+Stejná measure:
+- může vracet různé výsledky,
+- podle filtrů a slicerů.
+
+---
+
+# Typické KPI v DAX
+
+## Total Revenue
+```DAX
+Total Revenue = SUM(orders[revenue])
+```
+
+---
+
+## Orders Count
+```DAX
+Orders Count = COUNTROWS(orders)
+```
+
+---
+
+## Average Order Value
+```DAX
+Average Revenue = AVERAGE(orders[revenue])
+```
+
+---
+
+## High Value Orders
+```DAX
+High Value Orders =
+CALCULATE(
+    COUNTROWS(orders),
+    FILTER(orders, orders[revenue] > 2500)
+)
+```
+
+---
+
+# Hlavní learning outcomes
+
+Po lekci:
+- pochopení DAX mindsetu,
+- rozdíl mezi measures a calculated columns,
+- práce s SUM, COUNT, AVERAGE,
+- pochopení CALCULATE a FILTER,
+- pochopení row context a filter context,
+- základ pro pokročilý DAX a KPI reporting.
+
+---
+
+
