@@ -1,0 +1,72 @@
+[
+  {
+    "customer_id": "C001",
+    "name": "Jan Novak",
+    "email": "jan.novak@email.cz",
+    "region": "Praha",
+    "age": 32
+  },
+  {
+    "customer_id": "C002",
+    "name": " Petra Svobodova ",
+    "email": "petra@email.cz",
+    "region": "Brno",
+    "age": 27
+  },
+  {
+    "customer_id": "C003",
+    "name": "Karel Dvorak",
+    "email": "karel.email.cz",
+    "region": "Ostrava",
+    "age": 45
+  },
+  {
+    "customer_id": "C004",
+    "name": "Eva Mala",
+    "email": "eva@email.cz",
+    "region": "Praha",
+    "age": null
+  },
+  {
+    "customer_id": "C005",
+    "name": "Tomas Urban",
+    "email": "tomas@email.cz",
+    "region": "Praha",
+    "age": 19
+  },
+  {
+    "customer_id": "C006",
+    "name": "Lucie Kralova",
+    "email": "lucie@email.cz",
+    "region": "Praha",
+    "age": 29
+  },
+  {
+    "customer_id": "C007",
+    "name": "Martin Spacek",
+    "email": "martin@email.cz",
+    "region": "Ostrava",
+    "age": 41
+  },
+  {
+    "customer_id": "C008",
+    "name": "Alena Benesova",
+    "email": "alena@email.cz",
+    "region": "Brno",
+    "age": 36
+  },
+  {
+    "customer_id": "C009",
+    "name": "Roman Cerny",
+    "email": "roman@email.cz",
+    "region": "",
+    "age": 52
+  },
+  {
+    "customer_id": "C010",
+    "name": "Roman Cerny",
+    "email": "roman@email.cz",
+    "region": "",
+    "age": 52
+  }
+]
