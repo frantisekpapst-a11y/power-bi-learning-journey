@@ -252,4 +252,70 @@ c)
 
 ---
 
+# Mini test – Lekce 5: Prostředí Power BI a základní vizualizace
+
+## 1.
+Který typ grafu je nejvhodnější pro zobrazení vývoje tržeb v čase?
+
+a) Koláčový graf  
+b) Spojnicový graf  
+c) Tabulka  
+d) KPI Card  
+
+### Správná odpověď:
+b) Spojnicový graf
+
+---
+
+## 2.
+K čemu slouží slicer v Power BI?
+
+a) K odstranění duplicit  
+b) K transformaci dat  
+c) K interaktivnímu filtrování reportu  
+d) K vytváření relací mezi tabulkami  
+
+### Správná odpověď:
+c) K interaktivnímu filtrování reportu
+
+---
+
+## 3.
+Ve kterém zobrazení Power BI pracujeme s relationships mezi tabulkami?
+
+a) Report View  
+b) Data View  
+c) Model View  
+d) Query View  
+
+### Správná odpověď:
+c) Model View
+
+---
+
+## 4.
+Jaký je hlavní účel KPI Cards?
+
+a) Detailní zobrazení všech dat  
+b) Rychlé zobrazení klíčových metrik  
+c) Tvorba relací mezi tabulkami  
+d) Export dat do Excelu  
+
+### Správná odpověď:
+b) Rychlé zobrazení klíčových metrik
+
+---
+
+## 5.
+Proč není vhodné mít dashboard s příliš mnoha grafy a barvami?
+
+a) Dashboard se nedá uložit  
+b) Power BI přestane fungovat  
+c) Dashboard je nepřehledný a hůře interpretovatelný  
+d) Nelze použít slicery  
+
+### Správná odpověď:
+c) Dashboard je nepřehledný a hůře interpretovatelný
+
+---
 
