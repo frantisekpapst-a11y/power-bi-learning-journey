@@ -1474,4 +1474,280 @@ Po lekci:
 
 ---
 
+# Cheatsheet – Lekce 8: AI funkce a prediktivní analýzy v Power BI
 
+# Hlavní cíl lekce
+
+Pochopit:
+- jak Power BI využívá AI,
+- jak fungují AI-assisted analytics,
+- co je forecasting,
+- jak funguje Q&A,
+- limity AI v BI.
+
+---
+
+# Co je AI v Power BI
+
+AI v Power BI slouží k:
+- automatické analýze dat,
+- hledání vzorů,
+- generování insightů,
+- forecastingu,
+- práci s přirozeným jazykem.
+
+---
+
+# Důležitý princip
+
+# Garbage In = Garbage Out
+
+Špatná data:
+→ špatné AI výstupy.
+
+AI:
+- neumí opravit nekvalitní data,
+- neumí validovat KPI,
+- neumí chápat business kontext.
+
+---
+
+# Hlavní AI funkce v Power BI
+
+# Q&A vizualizace
+
+Uživatel:
+- píše otázky běžným jazykem.
+
+Power BI:
+- automaticky vytvoří:
+  - graf,
+  - tabulku,
+  - vizualizaci.
+
+---
+
+# Příklad Q&A
+
+```text
+Show revenue by region
+```
+
+```text
+Show sales trend by month
+```
+
+```text
+Which category has highest profit?
+```
+
+---
+
+# Q&A funguje dobře pokud:
+
+- názvy sloupců dávají smysl,
+- model je čistý,
+- relationships fungují,
+- KPI jsou správně.
+
+---
+
+# Automated Insights
+
+Power BI:
+- analyzuje změny v datech,
+- hledá důvody růstu/poklesu.
+
+Například:
+```text
+Why did revenue increase in September?
+```
+
+---
+
+# Forecasting (Prognóza)
+
+Forecast:
+- odhad budoucího vývoje,
+- založený na historických datech.
+
+Použití:
+- revenue forecast,
+- sales forecast,
+- trend prediction.
+
+---
+
+# Forecast používá
+
+- trend,
+- časové řady,
+- statistické modely,
+- lineární regresi.
+
+---
+
+# Forecast není přesný pokud:
+
+- je málo dat,
+- data jsou noisy,
+- existují outliery,
+- trend není stabilní,
+- chybí sezónnost.
+
+---
+
+# Confidence Interval
+
+Forecast obsahuje:
+```text
+interval spolehlivosti
+```
+
+Ukazuje:
+- pravděpodobný rozsah budoucích hodnot.
+
+---
+
+# Horizontální forecast
+
+Pokud:
+- Power BI nenajde trend,
+
+forecast:
+- bude vodorovná čára.
+
+To znamená:
+- systém neidentifikoval jasný vývoj.
+
+---
+
+# AI v Power Query
+
+Pokročilé AI funkce:
+
+- sentiment analysis,
+- kategorizace textu,
+- keyword extraction.
+
+Použití:
+- recenze,
+- e-maily,
+- zákaznické feedbacky,
+- dotazníky.
+
+---
+
+# Azure Cognitive Services
+
+Tyto AI funkce:
+- využívají Azure AI,
+- často vyžadují Power BI Premium.
+
+---
+
+# Python a R v Power BI
+
+Použití:
+- machine learning,
+- pokročilé statistiky,
+- vlastní AI modely,
+- custom vizualizace.
+
+---
+
+# BI vs Prediktivní analytika
+
+| Typ analytiky | Otázka |
+|---|---|
+| BI analytika | Co se stalo? |
+| Prediktivní analytika | Co by se mohlo stát? |
+| Prescriptive analytics | Co bychom měli udělat? |
+
+---
+
+# Role analytika
+
+AI:
+- asistuje.
+
+Analytik:
+- interpretuje,
+- validuje,
+- chápe business,
+- rozhoduje.
+
+---
+
+# Nejčastější chyby
+
+## Slepá důvěra AI
+AI:
+- může vytvořit špatný insight.
+
+---
+
+## Špatné názvy tabulek/sloupců
+Q&A:
+- nerozumí modelu.
+
+---
+
+## Forecast nad nekvalitními daty
+Výsledek:
+- nepřesná predikce.
+
+---
+
+# Praktické využití AI v BI
+
+## Sales forecasting
+Predikce:
+- tržeb,
+- objednávek,
+- trendů.
+
+---
+
+## Customer analytics
+Analýza:
+- churnu,
+- segmentace,
+- zákaznického chování.
+
+---
+
+## Marketing analytics
+AI:
+- hledá výkonné kampaně,
+- analyzuje engagement,
+- identifikuje trendy.
+
+---
+
+# Důležitý mindset
+
+## AI nenahrazuje analytika
+
+AI:
+- zrychluje práci,
+- pomáhá hledat patterns.
+
+Ale:
+- nerozumí businessu,
+- neumí validovat data,
+- neumí interpretovat kontext.
+
+---
+
+# Hlavní learning outcomes
+
+Po lekci:
+- pochopení AI funkcí Power BI,
+- práce s Q&A,
+- pochopení forecastingu,
+- understanding AI limitations,
+- rozdíl BI vs AI analytika,
+- základ AI-assisted analytics.
+
+---
