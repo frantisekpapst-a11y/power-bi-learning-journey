@@ -182,4 +182,74 @@ b)
 
 ---
 
+# Lekce 4 — Mini Test
+## Základní úpravy a transformace dat v Power Query
+
+---
+
+## Otázka 1
+K čemu slouží Merge Queries?
+
+- a) Tvorba dashboardů
+- b) Spojení tabulek pomocí společného klíče
+- c) Export dat
+- d) Mazání vizualizací
+
+### Správná odpověď
+b)
+
+---
+
+## Otázka 2
+Proč jsou datové typy důležité?
+
+- a) Kvůli barvám dashboardu
+- b) Aby Power BI správně interpretoval data
+- c) Nemají význam
+- d) Jen kvůli exportu
+
+### Správná odpověď
+b)
+
+---
+
+## Otázka 3
+Jaký je častý problém při Merge operacích?
+
+- a) Příliš mnoho grafů
+- b) Duplicitní nebo nevalidní klíče
+- c) Nízké rozlišení
+- d) Chybějící dashboard
+
+### Správná odpověď
+b)
+
+---
+
+## Otázka 4
+K čemu slouží Group By?
+
+- a) Mazání dat
+- b) Sumarizace a agregace dat
+- c) Tvorba slicerů
+- d) Export reportu
+
+### Správná odpověď
+b)
+
+---
+
+## Otázka 5
+Co je profesionálnější přístup?
+
+- a) Přepisovat originální query
+- b) Pracovat přímo se source daty
+- c) Duplikovat query před většími úpravami
+- d) Ignorovat Applied Steps
+
+### Správná odpověď
+c)
+
+---
+
 
