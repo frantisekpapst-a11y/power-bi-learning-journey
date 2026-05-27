@@ -319,3 +319,135 @@ c) Dashboard je nepřehledný a hůře interpretovatelný
 
 ---
 
+# Mini test – Lekce 6: Efektivní vizualizace a dashboard design
+
+## 1.
+Který typ grafu je nejvhodnější pro zobrazení trendu tržeb v čase?
+
+a) Pie chart  
+b) Treemap  
+c) Spojnicový graf  
+d) KPI Card  
+
+### Správná odpověď:
+c) Spojnicový graf
+
+---
+
+## 2.
+Proč nejsou 3D grafy doporučované v BI dashboardech?
+
+a) Power BI je neumí správně vykreslit  
+b) Zkreslují data a zhoršují čitelnost  
+c) Nelze je filtrovat  
+d) Neumí zobrazit legendu  
+
+### Správná odpověď:
+b) Zkreslují data a zhoršují čitelnost
+
+---
+
+## 3.
+Kdy je vhodné použít pie chart?
+
+a) Pro zobrazení trendu v čase  
+b) Pro porovnání desítek kategorií  
+c) Pro zobrazení podílů na celku při malém počtu kategorií  
+d) Pro detailní tabulkový reporting  
+
+### Správná odpověď:
+c) Pro zobrazení podílů na celku při malém počtu kategorií
+
+---
+
+## 4.
+K čemu slouží whitespace v dashboardu?
+
+a) K dekoraci dashboardu  
+b) Ke zvýšení přehlednosti a oddělení sekcí  
+c) K urychlení Power BI  
+d) K exportu dashboardu do PDF  
+
+### Správná odpověď:
+b) Ke zvýšení přehlednosti a oddělení sekcí
+
+---
+
+## 5.
+Kam by měly být umístěny nejdůležitější KPI?
+
+a) Dolů doprava  
+b) Doprostřed dashboardu  
+c) Nahoru vlevo  
+d) Na samostatnou stránku  
+
+### Správná odpověď:
+c) Nahoru vlevo
+
+---
+
+## 6.
+Jaký je hlavní účel dashboardu?
+
+a) Ukázat co nejvíce grafů  
+b) Vypadat vizuálně složitě  
+c) Podpořit rychlé business rozhodování  
+d) Obsahovat všechny tabulky z databáze  
+
+### Správná odpověď:
+c) Podpořit rychlé business rozhodování
+
+---
+
+## 7.
+Proč není vhodné používat příliš mnoho barev?
+
+a) Dashboard zabírá více RAM  
+b) Zhoršuje to čitelnost a orientaci  
+c) Nelze exportovat report  
+d) Power BI podporuje maximálně 5 barev  
+
+### Správná odpověď:
+b) Zhoršuje to čitelnost a orientaci
+
+---
+
+## 8.
+Který typ grafu je vhodný pro porovnání kategorií?
+
+a) Line chart  
+b) Scatter plot  
+c) Bar/Column chart  
+d) Pie chart  
+
+### Správná odpověď:
+c) Bar/Column chart
+
+---
+
+## 9.
+Co umožňuje drill-down?
+
+a) Odstranění duplicit  
+b) Přechod z agregovaných dat do detailu  
+c) Export reportu  
+d) Převod datových typů  
+
+### Správná odpověď:
+b) Přechod z agregovaných dat do detailu
+
+---
+
+## 10.
+Co je častá chyba junior analytiků při tvorbě dashboardů?
+
+a) Použití KPI Cards  
+b) Příliš mnoho vizualizací a informací na jedné stránce  
+c) Použití slicerů  
+d) Použití line chartu pro trend  
+
+### Správná odpověď:
+b) Příliš mnoho vizualizací a informací na jedné stránce
+
+---
+
