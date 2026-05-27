@@ -583,4 +583,132 @@ b) IF()
 
 ---
 
+# Mini test – Lekce 8: AI funkce a prediktivní analýzy v Power BI
 
+## 1.
+K čemu slouží AI funkce v Power BI?
+
+a) K instalaci databází  
+b) K automatické analýze dat a hledání vzorů  
+c) K exportu reportů do PDF  
+d) K nastavování uživatelských oprávnění  
+
+### Správná odpověď:
+b) K automatické analýze dat a hledání vzorů
+
+---
+
+## 2.
+Co umožňuje Q&A vizualizace?
+
+a) Psát Python skripty  
+b) Automaticky čistit data  
+c) Pokládat otázky přirozeným jazykem  
+d) Převádět Power BI do Excelu  
+
+### Správná odpověď:
+c) Pokládat otázky přirozeným jazykem
+
+---
+
+## 3.
+Co znamená forecasting (prognóza)?
+
+a) Mazání chybných dat  
+b) Predikce budoucího vývoje na základě historických dat  
+c) Automatické vytváření relationships  
+d) Převod textu na čísla  
+
+### Správná odpověď:
+b) Predikce budoucího vývoje na základě historických dat
+
+---
+
+## 4.
+Proč může být forecast nepřesný?
+
+a) Protože Power BI neumí pracovat s grafy  
+b) Protože forecasting funguje jen v Excelu  
+c) Kvůli nekvalitním nebo nedostatečným datům  
+d) Protože forecasting nepracuje s časem  
+
+### Správná odpověď:
+c) Kvůli nekvalitním nebo nedostatečným datům
+
+---
+
+## 5.
+Co znamená princip „Garbage In = Garbage Out“?
+
+a) AI automaticky opraví špatná data  
+b) Špatná vstupní data vedou ke špatným výstupům  
+c) Forecast funguje bez dat  
+d) AI nepotřebuje datový model  
+
+### Správná odpověď:
+b) Špatná vstupní data vedou ke špatným výstupům
+
+---
+
+## 6.
+K čemu slouží Automated Insights?
+
+a) K ručnímu psaní DAX funkcí  
+b) K automatickému vysvětlení změn v datech  
+c) K převodu CSV na Excel  
+d) K vytváření relationships  
+
+### Správná odpověď:
+b) K automatickému vysvětlení změn v datech
+
+---
+
+## 7.
+Co je hlavní rozdíl mezi BI analytikou a prediktivní analytikou?
+
+a) BI používá grafy a prediktivní analytika ne  
+b) BI analyzuje minulost, prediktivní analytika odhaduje budoucnost  
+c) BI neumí pracovat s dashboardy  
+d) Prediktivní analytika nepracuje s daty  
+
+### Správná odpověď:
+b) BI analyzuje minulost, prediktivní analytika odhaduje budoucnost
+
+---
+
+## 8.
+Co je interval spolehlivosti u forecastu?
+
+a) Přesná budoucí hodnota  
+b) Rozsah pravděpodobných budoucích hodnot  
+c) Typ filtru v Power BI  
+d) Automatická oprava dat  
+
+### Správná odpověď:
+b) Rozsah pravděpodobných budoucích hodnot
+
+---
+
+## 9.
+Kdy se forecast často zobrazí jako vodorovná čára?
+
+a) Když Power BI nenajde jasný trend  
+b) Když dashboard obsahuje slicer  
+c) Když použijeme COUNTROWS()  
+d) Když používáme Excel místo SQL  
+
+### Správná odpověď:
+a) Když Power BI nenajde jasný trend
+
+---
+
+## 10.
+Kdy se v Power BI používá Python nebo R?
+
+a) Pro pokročilé analýzy a machine learning  
+b) Pro změnu barvy dashboardu  
+c) Pro export reportu  
+d) Pro tvorbu slicerů  
+
+### Správná odpověď:
+a) Pro pokročilé analýzy a machine learning
