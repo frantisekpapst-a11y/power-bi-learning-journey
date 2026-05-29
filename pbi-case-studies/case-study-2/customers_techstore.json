@@ -1,0 +1,7 @@
+[
+  {"customer_id":1,"customer_name":"Jan Novák","region":"Praha"},
+  {"customer_id":2,"customer_name":"Petra Dvořáková","region":"Brno"},
+  {"customer_id":3,"customer_name":"Tomáš Svoboda","region":"Ostrava"},
+  {"customer_id":4,"customer_name":"Lucie Malá","region":"Praha"},
+  {"customer_id":5,"customer_name":"Martin Černý","region":"Plzeň"}
+]
