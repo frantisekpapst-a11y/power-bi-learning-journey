@@ -2,7 +2,7 @@
 
 ## Přehled projektu
 
-Cílem této případové studie bylo vytvořit interaktivní dashboard v Power BI pro analýzu prodejních dat fiktivního obchodu TechStore.
+Cílem této případové studie bylo vytvořit interaktivní dashboard v Power BI pro analýzu prodejních dat fiktivního obchodu TechStore..
 
 Projekt demonstruje celý základní analytický workflow:
 
