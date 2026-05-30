@@ -1,0 +1,21 @@
+customer_id,customer_name,region_id,gender,age
+1001,Jan Novák,1,Muž,35
+1002,Petra Svobodová,2,Žena,28
+1003,Martin Dvořák,3,Muž,42
+1004,Lucie Černá,1,Žena,
+1005,David Procházka,4,Muž,31
+1006,Jana Nováková,5,Žena,45
+1007,Petr Svoboda,2,Muž,38
+1008,Eva Dvořáková,3,Žena,26
+1009,Tomáš Černý,1,Muž,50
+1010,Marie Procházková,6,Žena,41
+1011,Jakub Novák,7,Muž,29
+1012,Alena Svobodová,8,Žena,36
+1013,Lukáš Dvořák,4,Muž,33
+1014,Tereza Černá,5,Žena,24
+1015,Michal Procházka,6,Muž,47
+1016,Veronika Nováková,7,Žena,32
+1017,Ondřej Svoboda,8,Muž,27
+1018,Klára Dvořáková,1,Žena,39
+1019,Radek Černý,2,Muž,44
+1020,Nikola Procházková,3,Žena,Jiné
