@@ -1,22 +1,18 @@
-# Sales & Marketing Performance Dashboard
+# Czech E-commerce Analytics Dashboard
 
-## Náhled dashboardu
+## Přehled projektu
 
-![Dashboard](screenshots/dashboard.png)
+Tato případová studie demonstruje vytvoření kompletního analytického řešení v Power BI nad simulovanými daty českého e-commerce prostředí.
 
-Power BI case study zaměřená na analýzu prodejů, zákazníků a výkonnosti marketingových kampaní v prostředí e-commerce.
-
-## Cíl projektu
-
-Cílem projektu bylo vytvořit kompletní Business Intelligence řešení od přípravy dat až po interaktivní dashboard.
+Cílem projektu bylo navrhnout datový model, vytvořit DAX metriky a připravit interaktivní dashboardy pro analýzu obchodního výkonu, zákazníků a regionů.
 
 Projekt zahrnuje:
 
-- čištění dat v Power Query
-- návrh datového modelu
+- datový model ve stylu hvězdicového schématu (Star Schema)
+- transformace dat v Power Query
 - tvorbu DAX metrik
-- tvorbu interaktivního dashboardu
-- analýzu regionů, zákazníků a marketingových kampaní.
+- analytické dashboardy
+- drill-through stránku pro detailní analýzu regionů
 
 ---
 
@@ -24,13 +20,188 @@ Projekt zahrnuje:
 
 - Power BI Desktop
 - Power Query
-- DAX
-- Data Modeling
+- DAX (Data Analysis Expressions)
 - CSV Data Sources
+- GitHub
 
 ---
 
-## Struktura projektu
+## Datový model
+
+Projekt využívá hvězdicové schéma složené z následujících tabulek:
+
+### Faktové tabulky
+
+- `orders`
+- `order_details`
+
+### Dimenzní tabulky
+
+- `customers`
+- `products`
+- `campaigns`
+- `regions`
+
+Model umožňuje analyzovat:
+
+- tržby
+- objednávky
+- zákazníky
+- regiony
+- marketingové kampaně
+
+---
+
+## Vytvořené DAX metriky
+
+### Celkové tržby
+
+```DAX
+Celkové tržby =
+SUMX(
+    order_details,
+    order_details[quantity] * RELATED(products[price])
+)
+```
+
+### Počet objednávek
+
+```DAX
+Počet objednávek =
+DISTINCTCOUNT(orders[order_id])
+```
+
+### Počet zákazníků
+
+```DAX
+Počet zákazníků =
+DISTINCTCOUNT(customers[customer_id])
+```
+
+### Průměrná objednávka
+
+```DAX
+Průměrná objednávka =
+DIVIDE(
+    [Celkové tržby],
+    [Počet objednávek]
+)
+```
+
+### Průměrná útrata zákazníka
+
+```DAX
+Průměrná útrata =
+DIVIDE(
+    [Celkové tržby],
+    [Počet zákazníků]
+)
+```
+
+### ROI kampaně
+
+```DAX
+ROI kampaně =
+DIVIDE(
+    [Celkové tržby] -
+    SUM(campaigns[budget]),
+    SUM(campaigns[budget])
+)
+```
+
+### Průměrný věk zákazníků
+
+```DAX
+Průměrný věk =
+AVERAGE(customers[age])
+```
+
+### Počet regionů
+
+```DAX
+Počet regionů =
+DISTINCTCOUNT(regions[region_name])
+```
+
+---
+
+# Dashboard Pages
+
+## 1. Sales & Marketing Dashboard
+
+Hlavní stránka zaměřená na obchodní výkon a marketingové kampaně.
+
+### KPI
+
+- Celkové tržby
+- Počet objednávek
+- Počet zákazníků
+- Průměrná objednávka
+
+### Vizualizace
+
+- Tržby podle regionu
+- Průměrná objednávka podle regionu
+- ROI marketingových kampaní
+- Tržby podle kampaně
+
+### Filtry
+
+- Region
+- Marketingová kampaň
+- Měsíc objednávky
+
+---
+
+## 2. Customer Insights Dashboard
+
+Dashboard zaměřený na analýzu zákazníků.
+
+### KPI
+
+- Počet zákazníků
+- Průměrný věk
+- Průměrná útrata
+- Počet regionů
+
+### Vizualizace
+
+- Počet zákazníků podle regionu
+- Počet zákazníků podle pohlaví
+- Průměrná útrata podle regionu
+- Tržby podle zákazníka
+
+### Filtry
+
+- Region
+- Pohlaví
+- Věk zákazníků
+
+---
+
+## 3. Region Detail (Drill-through)
+
+Detailní stránka dostupná pomocí Drill-through z hlavního dashboardu.
+
+### KPI
+
+- Celkové tržby regionu
+- Počet zákazníků regionu
+- Průměrná objednávka regionu
+
+### Vizualizace
+
+- Tržby podle kampaně
+- Tržby podle zákazníka
+
+### Funkcionalita
+
+- Drill-through z regionálních grafů
+- Automatické filtrování podle vybraného regionu
+
+---
+
+# Struktura projektu
 
 ```text
 case-study-3/
@@ -48,204 +219,56 @@ case-study-3/
 │
 ├── screenshots/
 │   ├── dashboard.png
+│   ├── customer_dashboard.png
 │   └── data_model.png
 │
 ├── README.md
-└── NOTES.md
-```
-
-### Popis složek
-
-#### data/
-
-Obsahuje zdrojová data použitá v projektu.
-
-- **customers.csv** – informace o zákaznících
-- **orders.csv** – objednávky zákazníků
-- **order_details.csv** – položky jednotlivých objednávek
-- **products.csv** – produktový katalog
-- **campaigns.csv** – marketingové kampaně
-- **regions.csv** – geografické regiony
-
-#### dashboard/
-
-Obsahuje Power BI report.
-
-- **czech_ecommerce.pbix** – kompletní Power BI projekt včetně Power Query, datového modelu, DAX metrik a dashboardu
-
-#### screenshots/
-
-Obsahuje obrázky použité v dokumentaci projektu.
-
-- **dashboard.png** – finální dashboard
-- **data_model.png** – datový model
-
-#### README.md
-
-Hlavní dokumentace projektu.
-
-#### NOTES.md
-
-Poznámky z průběhu projektu, získané zkušenosti, problémy a možná budoucí rozšíření.
-
----
-
-## Datový model
-
-Projekt využívá hvězdicové schéma (Star Schema).
-
-### Tabulky
-
-#### Faktové tabulky
-
-- orders
-- order_details
-
-#### Dimenzní tabulky
-
-- customers
-- products
-- campaigns
-- regions
-
-### Datový model
-
-![Datový model](screenshots/data_model.png)
-
----
-
-## Dashboard
-
-### Hlavní KPI
-
-- Celkové tržby
-- Počet objednávek
-- Počet zákazníků
-- Průměrná hodnota objednávky
-- ROI marketingových kampaní
-
-### Použité vizualizace
-
-- KPI Cards
-- Sloupcové grafy
-- Slicery (region, kampaň, měsíc)
-- Interaktivní filtrování mezi vizuály
-
-### Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
----
-
-## Vytvořené DAX metriky
-
-### Celkové tržby
-
-```DAX
-Celkové tržby =
-SUMX(
-    order_details;
-    order_details[quantity] * RELATED(products[price])
-)
-```
-
-### Počet objednávek
-
-```DAX
-Počet objednávek =
-DISTINCTCOUNT(order_details[order_id])
-```
-
-### Počet zákazníků
-
-```DAX
-Počet zákazníků =
-DISTINCTCOUNT(customers[customer_id])
-```
-
-### Průměrná objednávka
-
-```DAX
-Průměrná objednávka =
-DIVIDE([Celkové tržby]; [Počet objednávek])
-```
-
-### ROI kampaně
-
-```DAX
-ROI kampaně =
-DIVIDE(
-    [Celkové tržby] - SUM(campaigns[budget]);
-    SUM(campaigns[budget])
-)
+└── notes.md
 ```
 
 ---
 
-## Proces zpracování dat
+# Screenshoty
 
-### Power Query
+## Sales & Marketing Dashboard
 
-Během přípravy dat byly provedeny následující kroky:
+Souhrnný pohled na obchodní výkon, regiony a marketingové kampaně.
 
-- kontrola datových typů
-- úprava textových hodnot
-- standardizace formátu platebních metod
-- identifikace chybějících hodnot
-- validace dat před vytvořením modelu
+## Customer Insights Dashboard
 
-### Datové relace
+Analýza zákaznické základny, regionů a zákaznické hodnoty.
 
-Bylo vytvořeno hvězdicové schéma propojující:
+## Data Model
 
-- zákazníky
-- objednávky
-- produkty
-- kampaně
-- regiony
-
-s centrální faktovou částí obsahující objednávky a jejich položky.
+Datový model navržený ve formě hvězdicového schématu.
 
 ---
 
-## Klíčová zjištění
+# Klíčové dovednosti procvičené v projektu
 
-- Kampaň Black Friday generovala nejvyšší tržby.
-- Region Ostrava dosáhl nejvyšších tržeb.
-- Některé kampaně vykázaly záporné ROI.
-- Výkonnost kampaní se výrazně liší mezi regiony.
-- Dashboard umožňuje rychlou identifikaci nejvýkonnějších segmentů.
-
----
-
-## Business přínos
-
-Dashboard umožňuje:
-
-- sledovat výkonnost marketingových kampaní
-- identifikovat nejvýkonnější regiony
-- porovnávat návratnost marketingových investic
-- monitorovat klíčové obchodní metriky v reálném čase
-- podporovat rozhodování na základě dat
+- Datové modelování
+- Power Query transformace
+- Tvorba DAX metrik
+- KPI reporting
+- Dashboard design
+- Interaktivní filtry
+- Drill-through analýza
+- Business Intelligence reporting
+- GitHub dokumentace projektů
 
 ---
 
-## Autor
+# Možná budoucí rozšíření
 
-**František Papst**
-
-Projekt vytvořen jako součást studia Power BI, DAX a Business Intelligence.
+- Custom Tooltip Pages
+- Bookmarks a navigační tlačítka
+- Pokročilé DAX metriky
+- Time Intelligence analýzy
+- Forecasting a trendové analýzy
+- Publikace do Power BI Service
 
 ---
 
-## Další rozvoj projektu
+# Autor
 
-Možná budoucí rozšíření:
-
-- časová analýza prodejů
-- meziroční porovnání
-- RFM segmentace zákazníků
-- Customer Lifetime Value (CLV)
-- pokročilé DAX metriky
-- executive dashboard pro management
-- predikce budoucích prodejů
+Vytvořeno v rámci osobního learning programu Data Analytics & Business Intelligence.
