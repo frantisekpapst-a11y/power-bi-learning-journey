@@ -16,7 +16,7 @@ Projekt zahrnuje:
 - návrh datového modelu
 - tvorbu DAX metrik
 - tvorbu interaktivního dashboardu
-- analýzu regionů, zákazníků a marketingových kampaní
+- analýzu regionů, zákazníků a marketingových kampaní.
 
 ---
 
