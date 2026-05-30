@@ -1,22 +1,80 @@
 # Notes
 
-## Co jsem se naučil
+## Přehled projektu
 
-Během tohoto projektu jsem si znovu prakticky vyzkoušel celý BI proces:
+Tato případová studie byla zaměřena na vytvoření kompletního Power BI řešení pro analýzu e-commerce dat.
 
-1. Import dat z CSV souborů
-2. Čištění dat v Power Query
-3. Kontrolu datových typů
-4. Návrh hvězdicového schématu
-5. Tvorbu relací mezi tabulkami
-6. Vytváření DAX metrik
-7. Práci s funkcemi:
-   - SUMX
-   - RELATED
-   - DISTINCTCOUNT
-   - DIVIDE
-   - CALCULATE
-8. Tvorbu dashboardu v Power BI
+Projekt pokrývá celý proces od načtení dat přes jejich transformaci až po tvorbu interaktivních dashboardů a business analýz.
+
+---
+
+## Co jsem se během projektu naučil
+
+### Power Query
+
+- Import dat z CSV souborů
+- Kontrola datových typů
+- Čištění textových hodnot
+- Identifikace chybějících hodnot
+- Kontrola kvality dat
+
+### Datový model
+
+- Návrh hvězdicového schématu (Star Schema)
+- Tvorba relací mezi tabulkami
+- Faktové a dimenzní tabulky
+- Princip filtračního kontextu
+
+### DAX
+
+Během projektu jsem si procvičil:
+
+- SUMX()
+- RELATED()
+- DISTINCTCOUNT()
+- DIVIDE()
+- CALCULATE()
+- AVERAGE()
+
+a jejich využití při tvorbě KPI metrik.
+
+### Dashboarding
+
+Vytvořil jsem:
+
+- Sales & Marketing Dashboard
+- Customer Insights Dashboard
+- Region Detail Drill-through stránku
+
+Použil jsem:
+
+- KPI karty
+- sloupcové grafy
+- donut grafy
+- slicery
+- drill-through navigaci
+
+---
+
+## Vytvořené metriky
+
+### Obchodní metriky
+
+- Celkové tržby
+- Počet objednávek
+- Počet zákazníků
+- Průměrná objednávka
+
+### Marketingové metriky
+
+- ROI kampaně
+- Tržby podle kampaní
+
+### Zákaznické metriky
+
+- Průměrný věk zákazníků
+- Průměrná útrata zákazníka
+- Počet regionů
 
 ---
 
@@ -24,28 +82,42 @@ Během tohoto projektu jsem si znovu prakticky vyzkoušel celý BI proces:
 
 ### Chybějící hodnota kampaně
 
-V tabulce campaigns chyběl název jedné kampaně.
+Jedna marketingová kampaň neobsahovala název.
 
-Řešení:
-- identifikace problému v Power Query
-- rozhodnutí zdokumentovat datový problém
+Možné řešení:
 
-### Relace zákazník -> objednávka
+- doplnění hodnoty po konzultaci s business uživatelem
+- označení jako datový problém
+
+### Relace Customers → Orders
 
 Model zobrazoval relaci 1:1.
 
-Důvod:
-- ukázková data obsahovala pouze jednu objednávku na zákazníka
+Po kontrole dat se ukázalo, že ukázkový dataset obsahoval pouze jednu objednávku na zákazníka.
 
 V reálném prostředí by relace byla 1:N.
 
 ### DAX syntaxe
 
-Při tvorbě CALCULATE metriky vznikla chyba způsobená nadbytečnou závorkou.
+Při vytváření metrik vznikaly chyby způsobené:
+
+- nesprávným oddělovačem argumentů
+- přebytečnými závorkami
 
 Řešení:
+
 - kontrola syntaxe
-- oprava uzavíracích závorek
+- postupné testování výrazů
+
+### Power BI UI
+
+Při tvorbě projektu se ukázalo, že některé návody již neodpovídají nejnovější verzi Power BI Desktop.
+
+Největší komplikace způsobilo:
+
+- nové rozhraní vizualizací
+- změny v nastavení tooltipů
+- změny v nastavení karet (Cards)
 
 ---
 
@@ -53,20 +125,42 @@ Při tvorbě CALCULATE metriky vznikla chyba způsobená nadbytečnou závorkou.
 
 Pokud bych projekt dále rozšiřoval:
 
-- časovou analýzu prodejů
-- meziroční srovnání
-- segmentaci zákazníků
-- RFM analýzu
-- detailnější marketingovou atribuci
-- KPI stránku pro management
-- pokročilé DAX metriky
+### Power BI
+
+- Custom Tooltip Pages
+- Bookmarks
+- Navigační tlačítka
+- Podmíněné formátování KPI
+
+### DAX
+
+- Time Intelligence
+- Meziroční srovnání
+- Running Total
+- Podíl tržeb podle regionů
+
+### Business analýza
+
+- Segmentace zákazníků
+- RFM analýza
+- Customer Lifetime Value
+- Analýza retence zákazníků
 
 ---
 
 ## Celkové zhodnocení
 
-Projekt pokrývá kompletní workflow Power BI:
+Tento projekt představuje první kompletní end-to-end Power BI case study.
 
-Data → Power Query → Datový model → DAX → Dashboard → Business Insights
+Pokryté oblasti:
 
-Jedná se o první kompletní end-to-end BI case study vytvořenou samostatně v Power BI.
+- Data Cleaning
+- Power Query
+- Data Modeling
+- DAX
+- Dashboard Design
+- Business Analysis
+- Drill-through Reporting
+- GitHub dokumentace
+
+Projekt byl vytvořen samostatně jako součást přípravy na junior pozici Data Analyst / BI Analyst.
