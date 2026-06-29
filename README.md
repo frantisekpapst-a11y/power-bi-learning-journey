@@ -12,21 +12,9 @@ Repozitář dokumentuje můj postup od základů Power Query až po tvorbu inter
 power-bi-learning-journey/
 │
 ├── pbi-case-studies/
-│   ├── case-study-1/
-│   │   ├── README.md
-│   │   ├── *.pbix
-│   │   └── assets/
-│   │
-│   ├── case-study-2/
-│   │   ├── README.md
-│   │   ├── *.pbix
-│   │   └── assets/
-│   │
-│   └── case-study-3/
-│       ├── README.md
-│       ├── Czech_Ecommerce.pbix
-│       ├── dataset/
-│       └── assets/
+│   ├── case-study-1
+│   ├── case-study-2
+│   └── case-study-3
 │
 ├── pbi-cheatsheets/
 │   ├── pbi-cheatsheet-itnetwork.md
@@ -229,7 +217,3 @@ Plánuji přidávat další:
 # 👤 Autor
 
 **František Papst**
-
-Junior Data Analyst | Power BI | SQL | Excel | Python (learning)
-
-GitHub Portfolio vytvořené jako dokumentace studia datové analytiky.
