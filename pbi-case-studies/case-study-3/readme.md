@@ -12,7 +12,7 @@ Projekt zahrnuje:
 - transformace dat v Power Query
 - tvorbu DAX metrik
 - analytické dashboardy
-- drill-through stránku pro detailní analýzu regionů
+- drill-through stránku pro detailní analýzu regionů.
 
 ---
 
