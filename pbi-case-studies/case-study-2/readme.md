@@ -225,21 +225,3 @@ dashboard/techstore_dashboard.png
 ```
 
 obsahuje náhled finálního dashboardu.
-
----
-
-## Co jsem si v projektu procvičil
-
-- Import dat do Power BI
-- Datové modelování
-- Relace 1:N
-- Star Schema
-- DAX
-- SUMX
-- RELATED
-- DISTINCTCOUNT
-- DIVIDE
-- KPI metriky
-- Dashboard Design
-- Slicery a filtrování
-- Business interpretaci dat
