@@ -16,7 +16,7 @@ Projekt simuluje realistickou práci junior BI analytika.
 
 ---
 
-# Struktura projektu
+## Struktura projektu
 
 ```text
 power-bi-case-study-1/
@@ -45,8 +45,7 @@ power-bi-case-study-1/
 ```
 
 ---
-
-# Použité technologie
+## Použité technologie
 
 - Power BI Desktop
 - Power Query
@@ -59,29 +58,29 @@ power-bi-case-study-1/
 
 ---
 
-# Úkoly čištění dat
+## Úkoly čištění dat
 
-## Customers
+### Customers
 - trim a clean textu,
 - validace emailů,
 - detekce chybějících regionů,
 - odstranění duplicitních zákazníků.
 
-## Orders
+### Orders
 - detekce duplicitních objednávek,
 - flagování suspicious revenue,
 - validace záporného quantity,
 - validace neplatných statusů,
 - práce s null hodnotami.
 
-## Products
+### Products
 - standardizace kategorií,
 - validace chybějících kategorií,
 - analýza duplicit produktů.
 
 ---
 
-# Hlavní learning outcomes
+## Hlavní learning outcomes
 
 - pochopení ETL workflow,
 - tvorba čistých datasetů,
@@ -92,7 +91,7 @@ power-bi-case-study-1/
 
 ---
 
-# Business pohled
+## Business pohled
 
 Cílem projektu nebylo pouze technické čištění dat, ale také:
 - zabránění chybným KPI výpočtům,
@@ -102,7 +101,7 @@ Cílem projektu nebylo pouze technické čištění dat, ale také:
 
 ---
 
-# Další kroky
+## Další kroky
 
 Plánované pokračování:
 - KPI reporting,
