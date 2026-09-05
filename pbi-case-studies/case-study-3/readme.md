@@ -47,7 +47,7 @@ case-study-3/
 
 - Power BI Desktop
 - Power Query
-- DAX (Data Analysis Expressions)
+- DAX
 - CSV Data Sources
 - GitHub
 
