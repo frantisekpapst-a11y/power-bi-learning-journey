@@ -16,6 +16,33 @@ Projekt zahrnuje:
 
 ---
 
+# Struktura projektu
+
+```text
+case-study-3/
+│
+├── data/
+│   ├── campaigns.csv
+│   ├── customers.csv
+│   ├── order_details.csv
+│   ├── orders.csv
+│   ├── products.csv
+│   └── regions.csv
+│
+├── dashboard/
+│   └── czech_ecommerce.pbix
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── customer_dashboard.png
+│   └── data_model.png
+│
+├── README.md
+└── notes.md
+```
+
+---
+
 ## Použité technologie
 
 - Power BI Desktop
@@ -198,33 +225,6 @@ Detailní stránka dostupná pomocí Drill-through z hlavního dashboardu.
 
 - Drill-through z regionálních grafů
 - Automatické filtrování podle vybraného regionu
-
----
-
-# Struktura projektu
-
-```text
-case-study-3/
-│
-├── data/
-│   ├── campaigns.csv
-│   ├── customers.csv
-│   ├── order_details.csv
-│   ├── orders.csv
-│   ├── products.csv
-│   └── regions.csv
-│
-├── dashboard/
-│   └── czech_ecommerce.pbix
-│
-├── screenshots/
-│   ├── dashboard.png
-│   ├── customer_dashboard.png
-│   └── data_model.png
-│
-├── README.md
-└── notes.md
-```
 
 ---
 
