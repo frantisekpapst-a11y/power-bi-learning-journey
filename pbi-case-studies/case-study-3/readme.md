@@ -266,9 +266,3 @@ Datový model navržený ve formě hvězdicového schématu.
 - Time Intelligence analýzy
 - Forecasting a trendové analýzy
 - Publikace do Power BI Service
-
----
-
-# Autor
-
-Vytvořeno v rámci osobního learning programu Data Analytics & Business Intelligence.
