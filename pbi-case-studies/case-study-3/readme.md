@@ -1,4 +1,4 @@
-# Czech E-commerce Analytics Dashboard
+# Case Study 03 - Czech E-commerce Analytics Dashboard
 
 ## Přehled projektu
 
