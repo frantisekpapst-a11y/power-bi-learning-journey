@@ -31,7 +31,7 @@ power-bi-portfolio/
 │   └── case-study-4/
 │
 ├── pbi-cheatsheets/
-│   ├── pbi-cheatsheet-itnetwork.md
+│   ├── pbi-cheatsheet.md
 │
 ├── pbi-mini-tests/
 │   └── pbi-cheatsheet-mini-tests.md
