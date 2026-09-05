@@ -1,4 +1,4 @@
-# Power BI Case Study 1 – Data Cleaning and ETL in Power Query
+# Power BI Case Study 01 – Data Cleaning and ETL in Power Query
 
 ## Přehled projektu
 Tato case study je zaměřena na praktický ETL workflow a čištění dat v Power BI pomocí Power Query.
