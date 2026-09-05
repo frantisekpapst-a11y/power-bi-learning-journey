@@ -16,6 +16,28 @@ Dashboard umožňuje sledovat výkonnost prodeje podle regionů, produktů a ča
 
 ---
 
+## Struktura projektu
+
+```text
+case-study-02-techstore-powerbi/
+│
+├── README.md
+│
+├── dashboard/
+│   ├── techstore.pbix
+│   └── techstore_dashboard.png
+│
+├── data/
+│   ├── customers_techstore.xlsx
+│   ├── orders_techstore.xlsx
+│   └── products_techstore.xlsx
+│
+└── notes/
+    └── business_findings.md
+```
+
+---
+
 ## Použité nástroje
 
 - Power BI Desktop
@@ -206,28 +228,6 @@ obsahuje náhled finálního dashboardu.
 
 ---
 
-## Struktura projektu
-
-```text
-case-study-02-techstore-powerbi/
-│
-├── README.md
-│
-├── dashboard/
-│   ├── techstore.pbix
-│   └── techstore_dashboard.png
-│
-├── data/
-│   ├── customers_techstore.xlsx
-│   ├── orders_techstore.xlsx
-│   └── products_techstore.xlsx
-│
-└── notes/
-    └── business_findings.md
-```
-
----
-
 ## Co jsem si v projektu procvičil
 
 - Import dat do Power BI
@@ -243,9 +243,3 @@ case-study-02-techstore-powerbi/
 - Dashboard Design
 - Slicery a filtrování
 - Business interpretaci dat
-
----
-
-## Autor
-
-Projekt vznikl jako součást přípravy na pozici Data Analyst / BI Analyst a slouží jako ukázka práce s Power BI, DAX a datovým modelováním.
