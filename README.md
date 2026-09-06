@@ -169,179 +169,43 @@ Hlavní témata:
 
 # 🧩 Power BI Skills
 
-## Power Query & Data Preparation
+Portfolio pokrývá praktickou práci s Power BI od datové přípravy až po interaktivní management reporting.
 
-Prakticky pokryté oblasti:
+Hlavní oblasti:
 
-- import z různých datových zdrojů,
-- CSV, Excel a JSON,
-- kontrola datových typů,
-- missing values,
-- duplicity,
-- text cleaning,
-- filtrování,
-- třídění,
-- Group By,
-- Merge Queries,
-- join logika,
-- Applied Steps,
-- reprodukovatelné transformační workflow.
-
-Důraz je kladen na princip:
-
-```text
-clean and validate data
-before building the report
-```
-
----
-
-## Data Modeling
-
-Portfolio zahrnuje práci s:
-
-- faktovými a dimenzními tabulkami,
-- primary a foreign keys,
-- relationships,
-- kardinalitou `1:*`,
+- Power Query,
+- import CSV, Excel a JSON,
+- data cleaning a transformace,
+- Merge Queries a join logika,
+- datové modelování,
+- fact a dimension tables,
 - Star Schema,
-- sdílenými dimenzemi,
-- filter contextem,
-- návrhem modelu pro analytický reporting.
-
-Cílem není pouze vizualizace dat, ale vytvoření modelu, nad kterým lze spolehlivě stavět DAX a reporting.
-
----
-
-## DAX
-
-Použité koncepty a funkce zahrnují například:
-
-```DAX
-SUM()
-AVERAGE()
-COUNT()
-COUNTROWS()
-DISTINCTCOUNT()
-DIVIDE()
-IF()
-CALCULATE()
-FILTER()
-```
-
-Dále:
-
-- measures,
-- calculated columns,
-- row context,
-- filter context,
-- dynamické KPI,
-- agregace,
-- business logiku,
-- Actual vs. Target výpočty.
-
-Důležitou součástí práce s DAX je rozlišení mezi:
-
-```text
-Power Query
-→ příprava dat
-
-DAX
-→ dynamická analytická logika
-```
-
----
-
-## KPI & Business Reporting
-
-Portfolio obsahuje práci s KPI, jako jsou například:
-
-- Revenue,
-- Orders,
-- Customers,
-- Average Order Value,
-- ROI,
-- Actual vs. Target,
-- Target Attainment,
-- Variance,
-- Active Contracts,
-- Cancellation Rate.
-
-KPI nejsou používána izolovaně, ale jako součást konkrétní business otázky a rozhodovacího kontextu.
-
----
-
-## Dashboard Design & Data Visualization
-
-Při návrhu reportů je kladen důraz na:
-
-- jasnou informační hierarchii,
-- omezený počet vizualizací,
-- konzistentní layout,
-- vhodnou volbu typu grafu,
-- whitespace,
-- čitelnost,
+- relationships a kardinalita `1:*`,
+- DAX measures,
+- `CALCULATE()`, `FILTER()`, `DIVIDE()`, `DISTINCTCOUNT()`,
+- row context a filter context,
+- KPI reporting,
+- Actual vs. Target analýza,
+- dashboard design,
+- slicery a filtry,
+- drill-down a drill-through,
+- conditional formatting,
 - management-oriented reporting,
-- minimalizaci vizuálního šumu.
+- forecasting a AI-assisted analytics concepts.
 
-Použité vizualizace zahrnují například:
-
-- KPI Cards,
-- Column / Bar Charts,
-- Line Charts,
-- Combo Charts,
-- Matrix,
-- Tables,
-- Scatter Plot,
-- Treemap.
-
-Základní princip:
+Důraz je kladen na:
 
 ```text
-Dashboard není galerie grafů.
-
-Dashboard je nástroj pro rozhodování.
+Data Preparation
+→ Data Model
+→ DAX
+→ KPI
+→ Visualization
+→ Interactive Reporting
+→ Business Interpretation
 ```
 
----
-
-## Interaktivní reporting
-
-V projektech jsou využívány například:
-
-- slicery,
-- visual / page / report filters,
-- synchronizované slicery,
-- drill-down,
-- drill-through,
-- interaktivní filtrování,
-- conditional formatting.
-
-Tyto funkce umožňují přechod od statického reportu k self-service analytickému prostředí.
-
----
-
-## AI & Predictive Analytics Concepts
-
-Součástí pokrytých témat jsou také vybrané AI-assisted funkce Power BI:
-
-- Q&A,
-- Automated Insights,
-- forecasting,
-- confidence intervals,
-- AI-assisted analytics,
-- základní principy prediktivní analytiky,
-- možnosti integrace Pythonu a R.
-
-Důraz je kladen také na limity těchto funkcí:
-
-```text
-AI output
-≠
-automaticky validní business insight
-```
-
-Výsledky je nutné posuzovat v kontextu kvality dat, datového modelu a business problému.
+Detailní syntaxe, příklady a poznámky jsou součástí cheatsheetu a jednotlivých case studies.
 
 ---
 
